@@ -10,7 +10,7 @@ body {
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* https://www.w3schools.com/cssref/pr_background-attachment.php */
   position: relative;
   display: flex;
   align-items: center;
@@ -27,12 +27,6 @@ body {
   justify-content: center;
 }
 
-.header-content {
-  text-align: center;
-  z-index: 2;
-  animation: fadeInUp 1s ease-in-out;
-}
-
 .header-title {
   color: rgb(23, 98, 153);
 }
@@ -41,9 +35,12 @@ body {
     font-size: 30px;
 }
 
-.header-btn {
-  background-color: rgb(23, 98, 153);
-  color: white;
+.header-btn,
+.header-btn:hover,
+.header-btn:focus {
+  background-color: rgb(23, 98, 153) !important;
+  color: white !important;
+  border: none;
 }
 
 .gallery-header{
@@ -55,9 +52,10 @@ body {
 }
 
 .product-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* https://tobiasahlin.com/blog/how-to-animate-box-shadow/ */
     height: 100%;
     width: 80%;
+    margin: 0 auto;
 }
 
 .product-card:hover {
@@ -82,7 +80,7 @@ body {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1;
     visibility: hidden;
 }
 

@@ -89,7 +89,7 @@ let cart = [];
 let ProductCounter = 0;
 
 function scrollToGallery() {
-  document.getElementById("gallery").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("gallery").scrollIntoView({ behavior: "smooth" }); // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 }
 
 function renderProducts() {
@@ -318,14 +318,7 @@ document
     document.getElementById("confirmationPanel").innerHTML = summaryHtml;
 
     document.getElementById("backToGalleryBtn").onclick = function () {
-      cart = [];
-      ProductCounter = 0;
-      updateCartCounter();
-      document.getElementById("confirmationPanel").classList.add("d-none");
-      document.getElementById("gallery").classList.remove("d-none");
-      document.getElementById("cart").classList.add("d-none");
-      document.getElementById("checkoutForm").reset();
-      document.getElementById("cartContents").innerHTML = "";
+      location.reload();
     };
   });
 
