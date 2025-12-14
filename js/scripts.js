@@ -3,84 +3,84 @@ const products = [
     id: 1,
     name: "Dog food (10kg)",
     price: 39.99,
-    image: "../img/dog-food.png",
+    image: "img/dog-food.png",
     description: "Premium dog food",
   },
   {
     id: 2,
     name: "Cat food (5kg)",
     price: 19.99,
-    image: "../img/cat-food.png",
+    image: "img/cat-food.png",
     description: "Premium cat food",
   },
   {
     id: 3,
     name: "Dog toys",
     price: 29.99,
-    image: "../img/dog-toy.png",
+    image: "img/dog-toy.png",
     description: "Some dog toys",
   },
   {
     id: 4,
     name: "Cat toys",
     price: 11.99,
-    image: "../img/cat-toy.png",
+    image: "img/cat-toy.png",
     description: "Some cat toys",
   },
   {
     id: 5,
     name: "Pet care",
     price: 59.99,
-    image: "../img/pet-care.png",
+    image: "img/pet-care.png",
     description: "Pet care",
   },
   {
     id: 6,
     name: "Dog vaccinations",
     price: 39.99,
-    image: "../img/dog-vaccinations.png",
+    image: "img/dog-vaccinations.png",
     description: "Dog vaccinations",
   },
   {
     id: 7,
     name: "Cat vaccinations",
     price: 39.99,
-    image: "../img/cat-vaccinations.png",
+    image: "img/cat-vaccinations.png",
     description: "Cat vaccinations",
   },
   {
     id: 8,
     name: "Collars",
     price: 4.99,
-    image: "../img/collars.png",
+    image: "img/collars.png",
     description: "Collars for pets",
   },
   {
     id: 9,
     name: "Blankets",
     price: 3.99,
-    image: "../img/blankets.png",
+    image: "img/blankets.png",
     description: "Blankets to keep them warm",
   },
   {
     id: 10,
     name: "Voluenteers",
     price: 9.99,
-    image: "../img/voluenteers.png",
+    image: "img/voluenteers.png",
     description: "Employees who care with them",
   },
   {
     id: 11,
     name: "Cat scratchers",
     price: 69.99,
-    image: "../img/cat-scratchers.png",
+    image: "img/cat-scratchers.png",
     description: "Cat furniture",
   },
   {
     id: 12,
     name: "Adoption",
     price: 99.99,
-    image: "../img/adoption.png",
+    image: "img/adoption.png",
     description: "Adoption",
   },
 ];
@@ -177,7 +177,7 @@ function displayCart() {
     backBtn.className = "btn btn-danger top-0 start-0 m-2";
     backBtn.style.zIndex = "10";
     backBtn.innerHTML =
-      '<img src="../img/left-arrow.png" alt="Back" width="24" height="24" />';
+      '<img src="img/left-arrow.png" alt="Back" width="24" height="24" />';
     backBtn.onclick = () => {
       document.getElementById("cart").classList.add("d-none");
       document.getElementById("gallery").classList.remove("d-none");
