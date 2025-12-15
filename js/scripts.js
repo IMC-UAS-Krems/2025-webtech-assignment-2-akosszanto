@@ -190,7 +190,7 @@ function displayCart() {
     listGroup.className = "list-group mb-4";
 
     
-    // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
     Object.values(grouped).forEach((item) => {
       total += item.price * item.quantity;
       const listItem = document.createElement("li");
