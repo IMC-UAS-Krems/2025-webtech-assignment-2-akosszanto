@@ -158,6 +158,8 @@ function displayCart() {
     cartContentsDiv.innerHTML =
       '<div class="alert alert-info text-center">Your cart is empty.</div>';
   } else {
+    // Group items by ID and count quantities (3x same product becomes one with quantity: 3)
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
     const grouped = {};
     let total = 0;
     cart.forEach((item) => {
@@ -187,6 +189,8 @@ function displayCart() {
     const listGroup = document.createElement("ul");
     listGroup.className = "list-group mb-4";
 
+    
+    // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
     Object.values(grouped).forEach((item) => {
       total += item.price * item.quantity;
       const listItem = document.createElement("li");
